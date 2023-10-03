@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    padding: 10rem;
+    font-size: 24pt;
+    
+}
+.night{
+    background-color:  darkslategray;
+    color: white;
+    border: brown solid 4px;
+    border-radius: 20px;
+    transition: .2s;
+}
+.light{
+    background-color: white;
+    color: black;
+    border: black solid 4px;
+    border-radius: 20px;
+    transition: .2s;
+}
