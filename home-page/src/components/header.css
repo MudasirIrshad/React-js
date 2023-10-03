@@ -1,0 +1,12 @@
+
+header {
+    background-color: blue;
+    color: white;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 1rem;
+}
