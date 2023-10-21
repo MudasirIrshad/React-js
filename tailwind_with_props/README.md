@@ -1,0 +1,1 @@
+This template provides a minimal setup to get Taiwind working in Vite+React.
