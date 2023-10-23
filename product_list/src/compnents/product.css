@@ -1,0 +1,42 @@
+.product{
+    margin: 1rem 6rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    align-items: center;
+    background-color: lightcyan;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+img{
+    height: 25vh;
+    box-shadow: 0 0 5px gray;
+    /* padding: 1rem; */
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    /* margin: 0 1rem 0 0 ; */
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    box-shadow: 0 0 5px gray;
+    padding: 0 1rem;
+    width: 10vw;
+    background-color: white;
+    border-radius: 10px;
+    /* margin: 0 1rem 0 0 ; */
+
+}
+
+.pricing button{
+    margin: 10px 0 ;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
