@@ -1,0 +1,49 @@
+.black{
+    background-color: black;
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+button{
+    background-color: white;
+    padding: .5rem .5rem;
+    width: 10vw;
+}
+.red{
+    background-color: red;
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+.blue{
+    background-color: blue;
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+.yellow{
+    background-color: yellow;
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    color: black;
+}
+.green{
+    background-color: green;
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+.pink{
+    background-color: magenta;
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+.cyan{
+    background-color: cyan;
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    color: black;
+}
