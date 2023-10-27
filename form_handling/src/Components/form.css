@@ -1,0 +1,50 @@
+form{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+.main{
+    width: 40vw;
+    scroll-behavior: auto;
+}
+input{
+    width: 32vw;
+}
+h1{
+
+    color: white;
+}
+table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+td,th{
+    border: 1px solid black;
+    padding: 10px;
+}
+td{
+    background-color: lightblue;
+}
+th{
+    background-color: darkblue;
+    color: white;
+    border: 1px solid whi;
+}
+.output{
+    padding: 1rem;
+    width: 45vw;
+    overflow:auto;
+}
+button{
+    width: 32vw;
+}
+td {
+    /* Set a fixed width or max-width for the table cell to trigger overflow */
+    max-width:100px; /* You can adjust the value to your needs */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide content that overflows */
+    text-overflow: ellipsis; /* Show an ellipsis (...) when content overflows */
+  }
