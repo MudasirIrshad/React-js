@@ -1,0 +1,26 @@
+/* Define a class for the Footer container */
+.footer {
+    
+    background-color: #8f0404; /* Red background */
+    padding: 1rem; 
+    color: #fff; /* White text color */
+    list-style: none; /* Remove list bullets */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+    width: 100%;
+  }
+.divIndiv{
+    display: flex;
+}
+
+  @media (max-width: 700px) {
+    .divIndiv{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+  }
+  
