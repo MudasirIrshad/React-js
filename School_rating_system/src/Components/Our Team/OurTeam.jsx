@@ -1,5 +1,7 @@
 import Footer from "../Footer.jsx";
 import TeamIndividual from "./TeamIndividual";
+import 'animate.css';
+
 
 export default function OurTeam() {
   return (
@@ -15,12 +17,11 @@ export default function OurTeam() {
       designation="Software Developer"
       intro="
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo sunt culpa temporibus perferendis molestiae."/>
-      <TeamIndividual img="" alt="Img"
+      <TeamIndividual img="\src\Components\Our Team\ibrahim.jpg" alt="Img"
       name="Ibrahim Shah" 
       designation="Software Developer"
       intro="
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo sunt culpa temporibus perferendis molestiae."/>
-     
     </div>
 
    

@@ -14,7 +14,6 @@ export default function Header() {
   <li className="nav-item">
     <Link className="nav-link text-white font-bold" to="/ourTeam">Our Team</Link>
   </li>
- 
 </ul>
     </>
   )
