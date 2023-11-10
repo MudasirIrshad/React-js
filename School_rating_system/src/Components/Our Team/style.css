@@ -15,6 +15,14 @@
     animation-name: fadeInLeft;
     animation-duration: 1s;
     animation-fill-mode: both;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .main h1{
+    font-size: 25pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
   }
   
   @keyframes fadeInRight {
@@ -42,6 +50,7 @@
     margin: 20px;
     max-width: 400px;
     justify-content: center;
+    background-color: white;
     
 }
   
@@ -49,7 +58,9 @@
     font-size: 1.5rem;
     font-weight: bolder;
   }
-  
+  .inner{
+    display: flex;
+  }
   .mainCard p {
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -60,7 +71,7 @@
 
   
   /* Media query for desktop screens */
-  @media (max-width: 720px) {
+  @media (max-width: 900px) {
     .mainCard {
       width: fit-content;
       margin: 10px;
@@ -76,12 +87,82 @@
     .mainCard h1 {
       font-size: 2rem;
     }
-    .main{
+    .inner{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px;
       
     }
   }
+  .aboutUs {
+    width: 92vw;
+    /* height: 40vh; */
+    box-shadow: 0 0 10px #808080;
+    margin: 0 0 20px 0;
+    border-radius: 20px;
+    position: relative; /* Added position relative */
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .aboutUs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url('./aboutUs.jpg') no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+    z-index: -1; /* Places the background behind the content */
+  }
+  
+  /* Content within .aboutUs */
+  .inner-content {
+    position: relative; 
+    z-index: 1; 
+    color: white;
+    
+  }
+  .inner-content p{
+    font-size: 20pt;
+    width: 75vw;
+    
+  }
+.ourTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px gray;
+  margin: 30px 0;
+  width: 92vw;
+  position: relative; /* Added position relative to enable z-index positioning */
+}
+
+.ourTeam::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: url('./outTeam.jpg');
+  filter: brightness(30%);
+  z-index: -1;
+}
+
+/* Content within .ourTeam */
+.inner {
+  position: relative;
+  z-index: 1; 
+}

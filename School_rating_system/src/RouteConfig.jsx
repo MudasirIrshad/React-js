@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Home from './Components/Home'
+// import Home from './Components/Home'
+import Home from '../src/Components/Home/Home'
 import SchoolList from './Components/SchoolList'
 import OurTeam from './Components/Our Team/OurTeam'
 import Header from './Components/Header'

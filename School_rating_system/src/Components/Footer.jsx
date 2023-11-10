@@ -25,10 +25,10 @@ export default function Footer() {
       <Link className="font-bold p-4" aria-current="page" to="/">Home</Link>
     </li>
     <li>
-      <Link className="font-bold p-4" to="/schoolList">Schools List</Link>
+      <Link className="font-bold p-4" to="/schoolList">Schools</Link>
     </li>
     <li className="nav-item">
-      <Link className="font-bold p-4" to="/ourTeam">Our Team</Link>
+      <Link className="font-bold p-4" to="/ourTeam">About Us</Link>
     </li>
      </div>
   </div>
