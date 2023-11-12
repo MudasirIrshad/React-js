@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .school::before {
@@ -19,6 +20,7 @@
   background-size: cover;
   background-position: center; 
   filter: brightness(20%); 
+  
 }
 
 .school h1,
@@ -61,3 +63,5 @@
     width: 70vw;
   }
 }
+
+

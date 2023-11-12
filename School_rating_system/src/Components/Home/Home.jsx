@@ -49,7 +49,7 @@ export default function Home() {
         </SwiperSlide>
        
       </Swiper>
-
+       
       <Footer/>
     </div>
   )

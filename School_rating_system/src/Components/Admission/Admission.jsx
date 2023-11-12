@@ -30,7 +30,7 @@ export default function Admission(){
   <div>
 
     <div >
-      <label >Name Student</label>
+      <label >Student Name</label>
       <input type="text" className="forHTMLm-control" id="inputEmail4" placeholder="Student Name" value={studentName}
       onChange={(e)=>{setstudentName(e.target.value)}}/>
     </div>
@@ -38,7 +38,7 @@ export default function Admission(){
 
   <div>
     <label >Father Name</label><br />
-    <input type="text" className="forHTMLm-control" id="inputAddress" placeholder="1234 Main St"
+    <input type="text" className="forHTMLm-control" id="inputAddress" placeholder="Father Name"
     value={fatherName} 
     onChange={(e)=>{setfatherName(e.target.value)}}/>
   </div><br />
@@ -46,21 +46,23 @@ export default function Admission(){
   <div >
     <div>
       <label >Father Occupation</label>
-      <input type="text" className="forHTMLm-control" id="inputCity"
-      value={fatherOccupation} 
+      <input type="text" className="forHTMLm-control" id=""
+      value={fatherOccupation} placeholder='Doctor, Engineer, Driver etc.'
       onChange={(e)=>{setfatherOccupation(e.target.value)}}/>
     </div><br />
 
     <div>
       <label >School For Admission</label>
-      <input type="text" className="forHTMLm-control" id="inputZip"
+      <input type="text" className="forHTMLm-control" id=""
       value={schoolAdmission} 
+      placeholder='Islamia Model, St Francis etc ...'
       onChange={(e)=>{setschoolAdmission(e.target.value)}}/>
     </div>
   </div><br />
   <div>
       <label >Class</label>
-      <input type="text" className="forHTMLm-control" id="inputZip"
+      <input type="text" className="forHTMLm-control" id=""
+      placeholder='Nursery, One, Two etc ...'
       value={className} 
       onChange={(e)=>{setclassName(e.target.value)}}/>
     </div>
@@ -101,6 +103,7 @@ export default function Admission(){
         </div >
             </div>
 </div>
+
 <Footer/>
 </div>
     )

@@ -1,7 +1,7 @@
 /* Define a class for the Footer container */
 .footer {
     
-    background-color: #8f0404; /* Red background */
+    background-color: rgb(29, 29, 252); /* Red background */
     padding: 1rem; 
     color: #fff; /* White text color */
     list-style: none; /* Remove list bullets */
