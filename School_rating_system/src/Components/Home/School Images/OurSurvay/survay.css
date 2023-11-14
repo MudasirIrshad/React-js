@@ -1,0 +1,26 @@
+.OurSurvay {
+  width: 80vw;
+  box-shadow: 0 0 10px black;
+  border: white 1px solid;
+  padding: 10px;
+  margin: 20px;
+}
+
+.OurSurvay h1 {
+  font-size: 30pt;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .OurSurvay {
+    width: 90vw; /* Adjust as needed */
+    margin: 10px;
+  }
+
+  .OurSurvay h1 {
+    font-size: 20pt; /* Adjust as needed */
+  }
+}

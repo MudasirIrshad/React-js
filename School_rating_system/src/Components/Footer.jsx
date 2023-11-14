@@ -7,15 +7,16 @@ export default function Footer() {
 <div className='divIndiv'>
 
       <div className='pr-10'> 
+        <p className='font-bold'>MUDASIR IRSHAD</p>
         <a href="Email: mudasirirshad@gmail.com">Email: mudasirirshad@gmail.com</a>
         <p>Contact: 0335-2009891</p>
-        <p>MUDASIR IRSHAD</p>
       </div>
       <div className='pr-10'>
     
-        <a href="Email: mudasirirshad@gmail.com">Email: harismughal@gmail.com</a>
-        <p>Contact: 0335-2009891</p>
-        <p>Haris Mughal</p>
+        <a href="https://github.com/MudasirIrshad">GitHub: <br /> https://github.com/MudasirIrshad</a>
+        
+<br />
+        <a href="https://www.facebook.com/profile.php?id=100072760075831">--FaceBook--</a>
       </div>
 </div>
 

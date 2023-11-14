@@ -1,8 +1,14 @@
 import React from 'react'
 import Footer from '../Footer'
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 
 import { useState } from "react"
 import "./form.css"
+
+
+
+
 
 export default function Admission(){
     const [studentName,setstudentName]=useState('')
@@ -13,11 +19,19 @@ export default function Admission(){
     const [className,setclassName]=useState('')
     const [isSubmitted, setIsSubmitted] = useState(false);
 
+  
     const handleSubmit=(e)=>{
         e.preventDefault()
         setIsSubmitted(true)
+         alert("Confirm the detail Bellow in Result Section")
         
     }
+    const confirmation=(e)=>{
+      e.preventDefault()
+      
+       alert("Admission Form Submitted")
+      
+  }
     return(
     <div >
         <div className="admissionForm">
@@ -68,7 +82,7 @@ export default function Admission(){
     </div>
   <br />
 
-  <button className='bg-blue-700 p-1 border w-40' onClick={handleSubmit}type="submit" >Apply</button>
+  <button className='bg-blue-700 p-1 border w-40' onClick={handleSubmit }type="submit" >Apply</button>
 </form>
 </div>
 <hr />
@@ -76,30 +90,35 @@ export default function Admission(){
 <div  className="output">
         {isSubmitted && (
           
+          <div class="table-container">
+          <h1 className='text-white mb-4'>Confirmation</h1>
+          <div class="table-wrapper">
             <table>
-              <h1 className='text-white mb-4'>Result</h1>
-            <div>
-            <thead>
-                <th>Student Name</th>
-                
-                <th>Father Name</th>
-                <th>Father Occupation</th>
-                <th>className</th>
+              <thead>
+                <tr>
+                  <th>Student Name</th>
+                  <th>Father Name</th>
+                  <th>Father Occupation</th>
+                  <th>Class Name</th>
+                  <th>School For Admission</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{studentName || "------"}</td>
+                  <td>{fatherName || "------"}</td>
+                  <td>{fatherOccupation || "------"}</td>
+                  <td>{className || "------"}</td>
+                  <td>{schoolAdmission || "------"}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button className='bg-blue-700 p-1 border w-40 text-white' onClick={confirmation}>Confirm</button>
+        </div>
+        
 
-                <th>School For Admission</th>
-            </thead>
-            <tbody>
-                <td>{studentName || "------"}</td>
-             
-                <td>{fatherName || "------"}</td>
-                <td>{fatherOccupation || "------"}</td>
-                <td>{className || "------"}</td>
-                <td>{schoolAdmission || "------"}</td>
-            </tbody>
-            </div>
-        </table>
-
-        )}
+        ) }
         </div >
             </div>
 </div>
