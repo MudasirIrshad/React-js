@@ -33,7 +33,7 @@ function OurSurvay() {
           faded: { innerRadius: 30, additionalRadius: -30, color: 'gray'},
         },
       ]}
-      height={300} 
+      height={200} 
     />
         <p className='p-4 m-2 bg-gray-400 text-xl rounded border'>The majority of respondents either strongly agree or agree regarding the School Rating Web Application, constituting 80% of the responses. A smaller portion, 15%, expresses a neutral stance, while another 5% disagree to some extent.</p>
           </div>
