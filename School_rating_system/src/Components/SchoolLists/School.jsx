@@ -62,7 +62,7 @@ export default function RecipeReviewCard(props) {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton>
-        <button className='bg-red-500 p-1 m-1 rounded border border-gray-300 text-white text-xs'><Link to='/admission'>Admissions</Link></button>
+        <button className='bg-black p-1 m-1 rounded border border-gray-300 text-white text-xs'><Link to='/admission'>Admissions</Link></button>
         </IconButton>
         <ExpandMore
           expand={expanded}
