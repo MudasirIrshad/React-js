@@ -13,7 +13,6 @@ import './Home.css';
 import Schools from './School Images/Schools.jsx'
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-import OurSurvay from './School Images/OurSurvay/OurSurvay.jsx';
 export default function Home() {
   return (
     <div className='homeMain'>
@@ -52,7 +51,7 @@ export default function Home() {
       </Swiper>
 
 
-      <OurSurvay/>
+      
       <Footer/>
     </div>
   )
