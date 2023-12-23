@@ -28,7 +28,12 @@ export default function Admission(){
     }
     const confirmation=(e)=>{
       e.preventDefault()
-      
+      setstudentName('')
+      setfatherName('')
+      setfatherOccupation('')
+      setschoolAdmission('')
+      setclassName('')
+      setIsSubmitted(false)
        alert("Admission Form Submitted")
       
   }
@@ -64,6 +69,14 @@ export default function Admission(){
       value={fatherOccupation} placeholder='Doctor, Engineer, Driver etc.'
       onChange={(e)=>{setfatherOccupation(e.target.value)}}/>
     </div><br />
+    <div>
+      <label >Class</label>
+      <input type="text" className="forHTMLm-control" id=""
+      placeholder='Nursery, One, Two etc ...'
+      value={className} 
+      onChange={(e)=>{setclassName(e.target.value)}}/>
+    </div>
+  <br />
 
     <div>
       <label >School For Admission</label>
@@ -73,15 +86,7 @@ export default function Admission(){
       onChange={(e)=>{setschoolAdmission(e.target.value)}}/>
     </div>
   </div><br />
-  <div>
-      <label >Class</label>
-      <input type="text" className="forHTMLm-control" id=""
-      placeholder='Nursery, One, Two etc ...'
-      value={className} 
-      onChange={(e)=>{setclassName(e.target.value)}}/>
-    </div>
-  <br />
-
+ 
   <button className='bg-blue-700 p-1 border w-40' onClick={handleSubmit }type="submit" >Apply</button>
 </form>
 </div>
@@ -90,11 +95,11 @@ export default function Admission(){
 <div  className="output">
         {isSubmitted && (
           
-          <div class="table-container">
-          <h1 className='text-white mb-4'>Confirmation</h1>
-          <div class="table-wrapper">
+          <div className="table-container">
+          <h1 className='text-white text-sm mb-4'>Confirmation</h1>
+          <div className="table-wrapper">
             <table>
-              <thead>
+              <thead className='text-sm'>
                 <tr>
                   <th>Student Name</th>
                   <th>Father Name</th>
@@ -103,7 +108,7 @@ export default function Admission(){
                   <th>School For Admission</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className='text-xs'>
                 <tr>
                   <td>{studentName || "------"}</td>
                   <td>{fatherName || "------"}</td>

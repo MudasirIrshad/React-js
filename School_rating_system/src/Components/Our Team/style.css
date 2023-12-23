@@ -128,11 +128,11 @@
   .inner-content {
     position: relative; 
     z-index: 1; 
-    color: white;
+    color: black;
     
   }
   .inner-content p{
-    font-size: 20pt;
+    font-size: 15pt;
     width: 75vw;
     
   }
