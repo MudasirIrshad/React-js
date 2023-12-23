@@ -18,8 +18,8 @@ export default function History({ expenses }) {
 console.log(totalExpense);
 
   let detail=expenses.map((expense, index) => (
-    <div key={index} className='bg-white m-2 p-2 flex space-x-10'>
-      <li className='mr-auto'>{expense.description}</li>
+    <div key={index} className='bg-white m-2 p-2 rounded flex space-x-10'>
+      <li className='mr-auto '>{expense.description}</li>
       <li className='text-right'>{expense.price}</li>
     </div>
   ))
@@ -32,7 +32,7 @@ console.log(totalExpense);
 <RuppeDisplay income={totalIncome} expense={totalExpense}/>
 
       <p className='font-bold m-1'>History</p>
-      <ul className='bg-gray-800 p-2'>
+      <ul className='bg-gray-800 p-2 rounded'>
         {detail}
       </ul>
     </div>

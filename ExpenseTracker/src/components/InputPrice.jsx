@@ -29,6 +29,9 @@ export default function InputPrice() {
         addExpense()
         document.getElementById('price').value=null
         document.getElementById('description').value=''
+        if(price==null || des==''){
+          alert('filed is empty')
+        }
       }} 
       className='bg-gray-800 p-2 text-white'>
 
@@ -39,7 +42,7 @@ export default function InputPrice() {
         value={price}
         onChange={(e)=>setPrice(e.target.value) }
         className='text-black'
-        required
+        
         />
 
       </div>
@@ -51,7 +54,7 @@ export default function InputPrice() {
         value={des}
         onChange={(e)=>setDes(e.target.value) || ''}
         className='text-black'
-        required
+        
         />
       </div>
 
